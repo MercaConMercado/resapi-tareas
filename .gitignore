@@ -1,0 +1,4 @@
+#archivos que se ignoran cunado se sube a git
+.env
+node_modules 
+dist

@@ -1,0 +1,35 @@
+//aqui enviamos los metodos de SOLICITUD y PETICION para el navegador
+###
+GET http://localhost:5000/api/tareas
+
+###
+GET http://localhost:5000/api/tareas?size=2
+
+###
+POST http://localhost:5000/api/tareas
+Content-Type: application/json
+
+{
+ "title": "revision de fallas codigo",
+ "description": "Pruebas" 
+ 
+}
+
+###
+GET http://localhost:5000/api/tareas/5fdcbca06d59c03ec81289a6f
+
+###
+DELETE http://localhost:5000/api/tareas/5fdcfb38faa35f3f142da1e
+
+###
+GET http://localhost:5000/api/tareas/done
+
+###
+PUT http://localhost:5000/api/tareas/5fdcfb60faa35f3f142da1ed
+Content-Type: application/json
+
+{
+ "title": "Crear un sito web en HTML5, CSS3 , JAVA SCRIPT",
+ "description": "Desarollo de Software",
+ "done": false
+}
